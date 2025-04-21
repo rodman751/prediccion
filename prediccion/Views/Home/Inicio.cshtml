@@ -1,0 +1,102 @@
+﻿@{
+    ViewData["Title"] = "Inicio - Sistema Inteligente de Predicción de Dígitos";
+}
+
+<!-- Estilos adicionales -->
+<style>
+    body {
+        background-color: #f0f4f8;
+    }
+
+    .hero {
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #003366;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #555;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero .btn-primary {
+            font-size: 1.2rem;
+            padding: 12px 30px;
+            background-color: #003366;
+            border: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+            .hero .btn-primary:hover {
+                background-color: #002244;
+                transform: translateY(-2px);
+            }
+
+    .info-card {
+        margin-top: 50px;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+        .info-card h3 {
+            color: #003366;
+            margin-bottom: 20px;
+        }
+
+        .info-card ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .info-card li {
+            margin-bottom: 10px;
+        }
+</style>
+
+<div class="hero">
+    <h1>🧠 Sistema Inteligente de Predicción de Dígitos Manuscritos</h1>
+    <p>
+        Nuestro sistema utiliza inteligencia artificial para reconocer dígitos manuscritos a partir de imágenes,
+        combinando redes neuronales convolucionales (CNN) y procesamiento de imágenes para lograr alta precisión.
+    </p>
+
+    <a asp-area="" asp-controller="Home" asp-action="Index" class="btn btn-primary">
+        Comenzar Predicción
+    </a>
+
+    <!-- Nueva sección -->
+    <div class="info-card mt-5">
+        <h3>🚀 Tecnologías Utilizadas</h3>
+        <ul>
+            <li>✔️ Python (modelo de entrenamiento de IA)</li>
+            <li>✔️ Keras y TensorFlow (red neuronal convolucional - CNN)</li>
+            <li>✔️ .NET Core MVC (desarrollo web)</li>
+            <li>✔️ Bootstrap 5 (diseño responsive)</li>
+            <li>✔️ Visual Studio 2022 (entorno de desarrollo)</li>
+        </ul>
+
+        <h3 class="mt-4">🎯 Objetivo del Proyecto</h3>
+        <p class="mt-2">
+            Desarrollar un sistema inteligente que permita la identificación automática de dígitos manuscritos
+            a partir de imágenes, utilizando algoritmos de aprendizaje profundo para facilitar procesos de reconocimiento digital.
+        </p>
+    </div>
+</div>
